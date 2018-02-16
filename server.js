@@ -18,21 +18,21 @@ mongoose.Promise = global.Promise;
 // Connect to the Mongo DB
 var dburi = "mongodb://localhost/reactreadinglist";
 
-if (process.env.MONGODB_URI) {
-    mongoose.connect(process.env.MONGODB_URI)
-    .catch(function (err){
-        console.log(err)
-    });
-} else {
-    mongoose.connect(dburi);
-};
+// if (process.env.MONGODB_URI) {
+//     mongoose.connect(process.env.MONGODB_URI)
+//     .catch(function (err){
+//         console.log(err)
+//     });
+// } else {
+//     mongoose.connect(dburi);
+// };
 
-// mongoose.connect(
-//   process.env.MONGODB_URI || "mongodb://localhost/reactreadinglist",
-//   {
-//     useMongoClient: true
-//   }
-// );
+mongoose.connect(
+  process.env.MONGODB_URI || "mongodb://localhost/reactreadinglist",
+  {
+    useMongoClient: true
+  }
+);
 
 // Start the API server
 app.listen(PORT, function() {
