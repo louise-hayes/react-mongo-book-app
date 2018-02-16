@@ -1,7 +1,7 @@
 {
   "name": "mern",
   "version": "1.0.0",
-  "description": "",
+  "description": "## About This Boilerplate",
   "main": "server.js",
   "scripts": {
     "server": "node server.js",
@@ -23,5 +23,13 @@
     "body-parser": "^1.17.2",
     "express": "^4.15.4",
     "mongoose": "^4.11.7"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/louise-hayes/react-mongo-book-app.git"
+  },
+  "bugs": {
+    "url": "https://github.com/louise-hayes/react-mongo-book-app/issues"
+  },
+  "homepage": "https://github.com/louise-hayes/react-mongo-book-app#readme"
 }
